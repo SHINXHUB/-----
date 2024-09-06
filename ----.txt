@@ -4886,6 +4886,22 @@ spawn(function()
     end)
 end)
 
+local ToggleFast = Tabs.Setting:AddToggle("ToggleFast", {Title = "Auto Click",Description = "ออโต้ คลิ๊ก", Default = false })
+ToggleFast:OnChanged(function(Value)
+    _G.AutoClick = Value
+end)
+Options.ToggleFast:SetValue(false)
+spawn(function()
+game:GetService("RunService").RenderStepped:Connect(function()
+    if _G.AutoClick or Fastattack then
+         pcall(function()
+            game:GetService'VirtualUser':CaptureController()
+            game:GetService'VirtualUser':Button1Down(Vector2.new(0,1,0,1))
+        end)
+    end
+end)
+end)
+
 local ToggleFast = Tabs.Setting:AddToggle("ToggleFast", {Title = "Normal Fast Attack",Description = "ความเร็วโจมตีปกติ", Default = false })
 ToggleFast:OnChanged(function(Value)
     _G.FastAttack = Value

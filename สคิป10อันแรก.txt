@@ -390,7 +390,7 @@ function Update:Window(text,logo,keybind)
     UserText.TextColor3 = Color3.fromRGB(255, 255, 255)
     UserText.Size = UDim2.new(0, 80, 0, 25)
     UserText.Font = Enum.Font.GothamSemibold
-    UserText.Text = "SHIN X HUB"
+    UserText.Text = "Min Gaming Hub"
     UserText.TextScaled = true
     UserText.TextSize = 17.000
     UserText.TextWrapped = true
@@ -822,7 +822,7 @@ function Update:Window(text,logo,keybind)
         ImageButton.BorderSizePixel = 0
         ImageButton.Position = UDim2.new(0, 350, 0, 6)
         ImageButton.Size = UDim2.new(0, 20, 0, 20)
-        ImageButton.Image = "rbxassetid://13717478897"
+        ImageButton.Image = "rbxassetid://135962226963180"
         ImageButton.ImageColor3 = Color3.fromRGB(255, 255, 255)
 
         UICorner_2.CornerRadius = UDim.new(0, 5)
@@ -932,7 +932,7 @@ function Update:Window(text,logo,keybind)
         ImageLabel.BorderSizePixel = 0
         ImageLabel.Position = UDim2.new(0, 5, 0, 6)
         ImageLabel.Size = UDim2.new(0, 20, 0, 20)
-        ImageLabel.Image = "rbxassetid://13717478897"
+        ImageLabel.Image = "rbxassetid://135962226963180"
         ImageLabel.ImageColor3 = Color3.fromRGB(255, 255, 255)
 
         Space.Name = "Space"
@@ -1286,7 +1286,7 @@ function Update:Window(text,logo,keybind)
         ImageLabel.BorderSizePixel = 0
         ImageLabel.Position = UDim2.new(0, 7.5, 0, 7.5)
         ImageLabel.Size = UDim2.new(0, 30, 0, 30)
-        ImageLabel.Image = "rbxassetid://13717478897"
+        ImageLabel.Image = "rbxassetid://135962226963180"
             
         Title.Parent = SliderFrame_2
         Title.BackgroundColor3 = Color3.fromRGB(150, 150, 150)
